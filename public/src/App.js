@@ -1,33 +1,17 @@
-// import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { publicRoutes } from "./routes";
-import { DefaultLayout } from "./components/Layout";
-import { Fragment } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header"; // replace with the actual path to your Header component
+import Footer from "./components/Footer"; // replace with the actual path to your Footer component
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          {publicRoutes.map((route, index) => {
-            const Layout = route.layout === null ? Fragment : DefaultLayout;
-            const Page = route.component;
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                element={
-                  <Layout>
-                    <Page />
-                  </Layout>
-                }
-              />
-            );
-          })}
-        </Routes>
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,10 +1,10 @@
-import Contact from "../../Contact";
+import Contact from "./Contact";
 
 function Header() {
   return (
     <>
-      <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600 pt-1">
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4 border-b">
+      <nav class="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-gray-200 dark:border-gray-600 pt-1 border-b shadow">
+        <div class="md:container md:mx-auto flex flex-wrap items-center justify-between mx-auto p-4 border-b">
           <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="https://nhanvn.com/wp-content/uploads/2021/09/logonhan.svg"
@@ -84,7 +84,7 @@ function Header() {
           </div>
         </div>
 
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="md:container md:mx-auto flex flex-wrap items-center justify-between mx-auto p-4">
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
