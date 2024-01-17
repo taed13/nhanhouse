@@ -6,14 +6,14 @@ import bgImage from "../assets/bgnhan2-1.jpg";
 export default function Footer() {
   return (
     <div
-      className="footer w-full h-full bg-center bg-no-repeat bg-cover"
+      className="footer w-full h-60 bg-center bg-no-repeat bg-cover flex items-center"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="content text-white md:container md:mx-auto px-4 gap-2 flex justify-between">
+      <div className="content text-white text-base md:container md:mx-auto px-4 gap-2 flex justify-between">
         <p className="w-5/12 py-3 flex flex-col gap-2">
           <h3 className="text-xl font-bold">CÔNG TY TNHH NHÂN VN</h3>
           <p>
