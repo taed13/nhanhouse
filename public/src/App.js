@@ -1,17 +1,18 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
 import HomePage from "./pages/HomePage";
-import Header from "./components/Header"; // replace with the actual path to your Header component
-import Footer from "./components/Footer"; // replace with the actual path to your Footer component
+import Change from "./pages/Change";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="change" element={<Change />} />
+        </Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

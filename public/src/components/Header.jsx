@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Contact from "./Contact";
 
 function Header() {
@@ -88,22 +89,22 @@ function Header() {
           <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   class="block py-2 px-3 text-white text-lg bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/change"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   aria-current="page"
                 >
                   Giới Thiệu
-                </a>
+                </Link>
               </li>
               <li>
                 <button
@@ -137,12 +138,12 @@ function Header() {
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Dashboard
-                      </a>
+                      </Link>
                     </li>
                     <li aria-labelledby="dropdownNavbarLink">
                       <button
@@ -178,110 +179,110 @@ function Header() {
                           aria-labelledby="doubleDropdownButton"
                         >
                           <li>
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                             >
                               Overview
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                             >
                               My downloads
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                             >
                               Billing
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                             >
                               Rewards
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link
+                        to="#"
                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Earnings
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <div class="py-1">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                     >
                       Sign out
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Tư Vấn Tài Chính
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Luật Doanh Nghiệp
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Dịch Vụ Visa
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Liên Hệ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   class="block py-2 px-3 text-lg text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Tin Tức
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
-          <a
-            href="#"
+          <Link
+            to="#"
             class="flex items-center space-x-3 rtl:space-x-reverse border rounded-3xl"
             style={{ backgroundColor: "#f8cf75" }}
           >
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white py-3 px-7">
               Liên Hệ Ngay
             </span>
-          </a>
+          </Link>
         </div>
       </nav>
     </>
