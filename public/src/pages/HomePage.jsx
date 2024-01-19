@@ -8,6 +8,9 @@ import fieldOperation1 from "../assets/realestate.jpg";
 import fieldOperation2 from "../assets/FINANCESUPPORT.jpg";
 import fieldOperation3 from "../assets/TRAVELEVENTS.jpg";
 
+import bannerNhan from "../assets/bgnhan2-1.jpg";
+import Link from "antd/es/typography/Link";
+
 const contentStyle = {
   color: "#fff",
   textAlign: "center",
@@ -81,6 +84,59 @@ function HomePage() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="mt-14 mb-10 bg-cover bg-center h-100 flex gap-1">
+          <div
+            className="outstandingprj w-1/2 flex flex-col gap-3 items-center justify-center text-white uppercase"
+            style={{ backgroundImage: `url(${bannerNhan})` }}
+          >
+            <div className="flex">
+              <h3 className="text-2xl font-semibold mr-5">Dự án nổi bật</h3>
+              <ul className="list-disc pl-5 flex flex-col gap-1">
+                <li>
+                  <a href="#">Dự án 1</a>
+                </li>
+                <li>
+                  <a href="#">Dự án 2</a>
+                </li>
+              </ul>
+            </div>
+            <div className="hover:bg-white transition-colors duration-300 rounded-lg">
+              <Link
+                to="/"
+                className="border p-2 rounded-lg w-40 flex justify-center text-white hover:text-sky-400"
+              >
+                Tất cả dự án{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className="w-1/2"
+            style={{
+              backgroundImage: `url(https://e1.pxfuel.com/desktop-wallpaper/412/938/desktop-wallpaper-best-6-management-backgrounds-on-hip-project-manager.jpg)`,
+            }}
+          ></div>
+          {/* https://e1.pxfuel.com/desktop-wallpaper/412/938/desktop-wallpaper-best-6-management-backgrounds-on-hip-project-manager.jpg */}
+        </div>
+
+        <div className="md:container md:mx-auto">
+          <h3 className="text-sky-500 uppercase text-xl">Tin tức</h3>
         </div>
       </div>
     </>

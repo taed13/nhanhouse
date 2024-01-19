@@ -21,3 +21,8 @@ body {
   max-height: 100vh;
   max-width: 100vw;
 }
+
+a:where(.css-dev-only-do-not-override-zl9ks2).ant-typography,
+:where(.css-dev-only-do-not-override-zl9ks2).ant-typography a {
+  color: #fff;
+}
