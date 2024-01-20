@@ -3,6 +3,7 @@ import { Carousel } from "antd";
 import banner1 from "../assets/banner2-1.jpg";
 import banner2 from "../assets/banner2-2.jpg";
 import banner3 from "../assets/banner2-3.jpg";
+import data from "../data/data_news.json";
 
 import fieldOperation1 from "../assets/realestate.jpg";
 import fieldOperation2 from "../assets/FINANCESUPPORT.jpg";
@@ -17,6 +18,7 @@ const contentStyle = {
 };
 
 function HomePage() {
+  console.log(data);
   return (
     <>
       <div>
@@ -48,6 +50,7 @@ function HomePage() {
             </div>
           </Carousel>
         </div>
+
         <div className="text-center md:container md:mx-auto mt-5">
           <p className="text-sky-400 uppercase font-bold text-2xl py-4">
             Lĩnh vực hoạt động
@@ -136,7 +139,9 @@ function HomePage() {
         </div>
 
         <div className="md:container md:mx-auto">
-          <h3 className="text-sky-500 uppercase text-xl">Tin tức</h3>
+          <h3 className="text-sky-400 uppercase font-bold text-2xl py-4">
+            Tin tức
+          </h3>
         </div>
       </div>
     </>
