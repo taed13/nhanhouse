@@ -8,17 +8,58 @@ import data from "../data/data_news.json";
 import fieldOperation1 from "../assets/realestate.jpg";
 import fieldOperation2 from "../assets/FINANCESUPPORT.jpg";
 import fieldOperation3 from "../assets/TRAVELEVENTS.jpg";
+import doitac from "../assets/doitac.jpg";
 
 import bannerNhan from "../assets/bgnhan2-1.jpg";
 import Link from "antd/es/typography/Link";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const contentStyle = {
   color: "#fff",
   textAlign: "center",
 };
 
+const settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 function HomePage() {
   console.log(data);
+
   return (
     <>
       <div>
@@ -138,10 +179,76 @@ function HomePage() {
           {/* https://e1.pxfuel.com/desktop-wallpaper/412/938/desktop-wallpaper-best-6-management-backgrounds-on-hip-project-manager.jpg */}
         </div>
 
-        <div className="md:container md:mx-auto">
+        <div className="md:container md:mx-auto mb-5">
           <h3 className="text-sky-400 uppercase font-bold text-2xl py-4">
             Tin tức
           </h3>
+          <Slider {...settings} className="">
+            {data.map((item, index) => (
+              <>
+                <div key={index} className="cursor-pointer">
+                  <img src={item.imgurl} alt="" className="" />
+                  <h3 className="text-lg font-semibold">{item.title}</h3>
+                  <p className="text-gray-500">
+                    {new Date(item.date).toLocaleDateString("vi-VN")}
+                  </p>
+                  <p className="">{item.description}</p>
+                  <Link to="/" className="text-white hover:text-sky-400">
+                    Xem thêm...
+                  </Link>
+                </div>
+              </>
+            ))}
+          </Slider>
+        </div>
+
+        <div className="mt-10 flex">
+          <div className="w-1/2">
+            <img src={doitac} alt="" />
+          </div>
+          <div className="w-1/2 bg-custom-blue py-10 px-5 text-xl">
+            <h3 className="text-2xl text-white font-semibold uppercase">
+              Đối tác
+            </h3>
+            <div className="grid grid-cols-4 grid-rows-3 gap-4 mt-5">
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+              <div className="col-span-1 row-span-1">
+                <img src={doitac} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
