@@ -6,13 +6,13 @@ function Header() {
     <>
       <nav class="bg-white dark:bg-gray-900 w-full z-50 top-0 start-0 border-gray-200 dark:border-gray-600 pt-1 border-b shadow">
         <div class="md:container md:mx-auto flex flex-wrap items-center justify-between mx-auto p-4 border-b">
-          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="https://nhanvn.com/wp-content/uploads/2021/09/logonhan.svg"
               class="h-14"
               alt="Nhanhouse Logo"
             />
-          </a>
+          </Link>
           <div class="flex md:order-2 space-x-3 md:space-x-4 rtl:space-x-reverse">
             <Contact
               title="Địa chỉ"
